@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Home Services</div>
+      <ul class="nav-links">
+        <li><a href="#user-details">User Details</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Enter Payment Details</h1>
+    <form action="/submit-payment" method="POST" class="payment-form">
+      <label for="card-name">Cardholder's Name:</label>
+      <input type="text" id="card-name" name="card-name" required>
+
+      <label for="card-number">Card Number:</label>
+      <input type="text" id="card-number" name="card-number" maxlength="16" required>
+
+      <label for="expiry-date">Expiry Date:</label>
+      <input type="month" id="expiry-date" name="expiry-date" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="password" id="cvv" name="cvv" maxlength="3" required>
+
+      <button type="submit" class="redeem">Submit Payment</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Home Services</p>
+  </footer>
+</body>
+</html>

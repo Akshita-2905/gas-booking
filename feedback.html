@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h2>GasBooking</h2>
+        </div>
+        <ul>
+            <li><a href="ppvc.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback Form Section -->
+    <section class="feedback-form">
+        <h2>We Value Your Feedback</h2>
+        <p>Let us know how we can improve our services. Your input is important to us.</p>
+        <form action="#" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="rating">Rate Our Service</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">Excellent</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>
+                    <option value="1">Very Poor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Your Feedback</label>
+                <textarea id="comments" name="comments" placeholder="Share your thoughts" required></textarea>
+            </div>
+            <button type="submit" class="btn feedback-btn">Submit Feedback</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GasBooking. All rights reserved.</p>
+    </footer>
+</body>
+</html>
